@@ -15,6 +15,8 @@ def clipboard_input(driver, user_xpath, user_input_value):
     pyperclip.copy(temp_user_input_value)  # 사용자 클립보드에 저장 된 내용을 다시 가져 옴
     time.sleep(1)
 
+# 웹 드라이버 chromedriver.exe는 버전에 맞게 다운로드
+# https://sites.google.com/a/chromium.org/chromedriver/downloads
 driver = webdriver.Chrome("C:/Users/TREX/Downloads/교육자료/일단공부/chromedriver.exe")
 driver.implicitly_wait(3)
 
